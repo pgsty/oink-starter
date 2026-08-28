@@ -1,0 +1,108 @@
+# OINK Starter — the only site configuration file.
+# Change the two marked values first; everything else builds as-is.
+
+title: &siteTitle Project Name # CHANGE ME: one shared title for every language
+baseURL: https://example.org/ # CHANGE ME: canonical production URL
+defaultContentLanguage: en
+enableGitInfo: true
+enableRobotsTXT: true
+enableEmoji: true
+timeZone: UTC
+
+languages:
+  en:
+    label: English
+    locale: en-US
+    weight: 1
+    title: *siteTitle
+    params:
+      description: Documentation, updates, and guides for your project.
+  zh:
+    label: 简体中文
+    locale: zh-CN
+    weight: 2
+    title: *siteTitle
+    hasCJKLanguage: true
+    params:
+      description: 你的项目文档、动态与指南。
+  fr:
+    label: Français
+    locale: fr-FR
+    weight: 3
+    title: *siteTitle
+    params:
+      description: Documentation, actualités et guides de votre projet.
+
+# OINK's Markdown components depend on these three Goldmark settings.
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
+  highlight:
+    noClasses: false
+
+outputs:
+  home: [HTML, RSS, markdown, LLMS]
+  page: [HTML, markdown]
+  section: [HTML, RSS, print, markdown]
+
+params:
+  offline_search: true
+  copyright:
+    authors: Project contributors
+    from_year: 2026
+  footer_center_info: ''
+  ui:
+    dark_mode: true
+    section_index: cards
+    blog_index: cards
+    sidebar_menu_foldable: true
+    sidebar_icon_policy: groups
+    # theme_color: '#245f94'
+    # typography: system
+    # image_zoom: true
+    # share: [mastodon, linkedin, email, copy]
+    # feedback:
+    #   enable: true
+    #   reasons: true
+
+  # Optional repository links. Uncomment after creating your own repository.
+  # github_repo: https://github.com/OWNER/REPOSITORY
+  # github_branch: main
+
+  # Optional brand assets. The starter already supplies a neutral logo.
+  # logo: icons/logo.svg
+  # wordmark: icons/wordmark.svg
+
+  # Optional Giscus comments. Nothing is loaded until the entire block is set.
+  # comments:
+  #   enable: true
+  #   type: giscus
+  #   giscus:
+  #     repo: OWNER/REPOSITORY
+  #     repoId: R_xxxxxxxxxx
+  #     category: Announcements
+  #     categoryId: DIC_xxxxxxxxxx
+  #     mapping: pathname
+  #     inputPosition: bottom
+  #     theme: auto
+  #     loading: lazy
+
+  # Optional layout choice. Theme defaults remain active while commented.
+  # page_width: wide
+
+# Optional Google Analytics. Production builds only; previews stay untracked.
+# services:
+#   googleAnalytics:
+#     id: G-XXXXXXXXXX
+
+module:
+  imports:
+    - path: github.com/pgsty/oink
+  hugoVersion:
+    extended: true
+    min: 0.160.1

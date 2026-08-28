@@ -62,6 +62,7 @@ params:
     blog_index: cards
     sidebar_menu_foldable: true
     sidebar_icon_policy: groups
+    backlinks: true
     # theme_color: '#245f94'
     # typography: system
     # image_zoom: true

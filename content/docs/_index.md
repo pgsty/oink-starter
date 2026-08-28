@@ -1,6 +1,5 @@
 ---
-title: Documentation
-linkTitle: Docs
+title: Docs
 description: Learn the project, install it, follow a tutorial, and look up exact behavior.
 type: docs
 icon: fa-solid fa-book

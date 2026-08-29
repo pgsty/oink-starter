@@ -14,7 +14,7 @@ cd YOUR-REPOSITORY
 hugo server
 ```
 
-Open <http://localhost:1313/>. The first run downloads the pinned OINK Hugo Module. Building the site requires Git, Go 1.27 or newer, and Hugo Extended 0.165.0 or newer; it does not require Node.js or npm.
+Open <http://localhost:1313/>. The first run downloads the pinned OINK Hugo Module. Building the site requires Git, Go 1.26 or newer, and Hugo Extended 0.165.0 or newer; it does not require Node.js or npm.
 
 Cloning this original template is also exactly three commands:
 

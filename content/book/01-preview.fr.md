@@ -10,7 +10,7 @@ OINK Starter est un site Hugo Module. Git télécharge les sources, Go résout l
 
 ## Prérequis {#prerequisites}
 
-Installez Git, Go 1.26 ou plus récent et Hugo Extended 0.165.0 ou plus récent. Le mot `extended` doit apparaître dans `hugo version`.
+Installez Git, Go 1.27 ou plus récent et Hugo Extended 0.165.0 ou plus récent. Le mot `extended` doit apparaître dans `hugo version`.
 
 ## Trois commandes {#three-commands}
 

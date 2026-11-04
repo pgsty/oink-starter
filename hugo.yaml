@@ -57,6 +57,7 @@ params:
     from_year: 2026
   footer_center_info: ''
   ui:
+    compare: true
     preset: paper
     preset_menu: [paper, slate, ink, terminal]
     dark_mode: true
